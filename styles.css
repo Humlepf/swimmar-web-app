@@ -7,7 +7,7 @@ body {
     flex-direction: column;
 }
 
-/* Banner styling: */
+/* Banner & footer styling: */
 .banner-container,
 footer {
     align-items: center;
@@ -39,18 +39,18 @@ li a {
     font-size: 18px;
 }
 
-.banner-content1 {
+.banner-content-container1 {
     display: flex;
     justify-content: center;
-    padding: 64px 0;
 }
 
-.banner-content2 {
+.banner-content-container2 {
+    width: 900px;
+    padding: 64px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 1200px;
     gap: 16px;
 }
 
@@ -60,7 +60,11 @@ li a {
     justify-content: flex-start;
     width: 464px;
     flex: 1;
-    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 0;
 }
 
 .button.sign-up {
@@ -76,4 +80,42 @@ li a {
 .banner-img {
     width: 464px;
     flex: 1;
+}
+
+/* Main content */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.grid-item {
+    width: 364px;
+    height: auto;
 }
