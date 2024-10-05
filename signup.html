@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>New Swimmer Registration</h1>
-    <form>
+    <form method="POST"> 
+    <!-- POST is a little safer than GET because the parameters are not stored in browser history or in web server logs -->
         <label>First Name:</label><br>
         <input type="text" name="firstname"><br>
         
@@ -15,8 +16,8 @@
         <input type="text" name="lastname"><br>
         
         <label>Display Last Name As:</label><br>
-        <input type="radio" name="displayfullname"><label>Full name</label><br>
-        <input type="radio" name="displayinitialonly"><label>Initial only</label><br>
+        <input type="radio" name="display_name" value="Full_Name"><label>Full name</label><br>
+        <input type="radio" name="display_name" value="Initial_only"><label>Initial only</label><br>
         
         <label>Email Address:</label><br>
         <input type="text" name="email"><br>
@@ -25,11 +26,11 @@
         <input type="password" name="password" min="7"><br>
         
         <label>Country</label><br>
-        <input type="radio" name="england"><label>England</label><br>
-        <input type="radio" name="scotland"><label>Scotland</label><br>
-        <input type="radio" name="wales"><label>Wales</label><br>
-        <input type="radio" name="northernireland"><label>Northern Ireland</label><br>
-        <input type="radio" name="republicofireland"><label>Republic of Ireland</label><br>
+        <input type="radio" name="country" value="england"><label>England</label><br>
+        <input type="radio" name="country" value="scotland"><label>Scotland</label><br>
+        <input type="radio" name="country" value="wales"><label>Wales</label><br>
+        <input type="radio" name="country" value="northernireland"><label>Northern Ireland</label><br>
+        <input type="radio" name="country" value="republicofireland"><label>Republic of Ireland</label><br>
 
         <label>Postal Code:</label><br>
         <input type="text" name="postcode"><br>
