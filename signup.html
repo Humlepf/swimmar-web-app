@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+</head>
+<body>
+    <h1>New Swimmer Registration</h1>
+    <form>
+        <label>First Name:</label><br>
+        <input type="text" name="firstname"><br>
+        
+        <label>Last Name:</label><br>
+        <input type="text" name="lastname"><br>
+        
+        <label>Display Last Name As:</label><br>
+        <input type="radio" name="displayfullname"><label>Full name</label><br>
+        <input type="radio" name="displayinitialonly"><label>Initial only</label><br>
+        
+        <label>Email Address:</label><br>
+        <input type="text" name="email"><br>
+
+        <label>Create a Password:</label><br>
+        <input type="password" name="password" min="7"><br>
+        
+        <label>Country</label><br>
+        <input type="radio" name="england"><label>England</label><br>
+        <input type="radio" name="scotland"><label>Scotland</label><br>
+        <input type="radio" name="wales"><label>Wales</label><br>
+        <input type="radio" name="northernireland"><label>Northern Ireland</label><br>
+        <input type="radio" name="republicofireland"><label>Republic of Ireland</label><br>
+
+        <label>Postal Code:</label><br>
+        <input type="text" name="postcode"><br>
+
+        <label>Would you like to receive email notifications of new sessions that match your location?</label><br>
+        <input type="radio" name="emailnotifications" value="yes"><label>Yes</label><br>
+        <input type="radio" name="emailnotifications" value="no"><label>No</label><br>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
